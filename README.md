@@ -139,7 +139,7 @@ grep -w -n world newfile
 
 ![alt text](13.png)
 cat < newfile 
-```
+
 Hello world
 hello world
 Linux is world number 1
