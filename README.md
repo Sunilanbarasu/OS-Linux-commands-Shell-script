@@ -42,24 +42,22 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![alt text](1.png)
 
-<img width="311" height="167" alt="image" src="https://github.com/user-attachments/assets/cce2f9c0-6600-4807-bc32-a8f73da7a710" />
 
 
 cat < file2
 ## OUTPUT
-
+![alt text](2.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![alt text](3.png)
 comm file1 file2
  ## OUTPUT
-
+![alt text](4.png)
  
-diff file1 file2
-## OUTPUT
 
 
 #Filters
@@ -83,18 +81,18 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+![alt text](5.png)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![alt text](6.png)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![alt text](7.png)
 
 cat < newfile 
 ```
@@ -107,24 +105,21 @@ Hello world
 hello world
  
 grep Hello newfile 
-## OUTPUT
-
-
-
 grep hello newfile 
 ## OUTPUT
+![alt text](8.png)
 
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![alt text](9.png)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![alt text](10.png)
 
 
 
@@ -132,17 +127,17 @@ cat newfile | grep -i -c "hello"
 ## OUTPUT
 
 
-
+![alt text](11.png)
 
 grep -R ubuntu /etc
 ## OUTPUT
 
-
+![alt text](12.png)
 
 grep -w -n world newfile   
 ## OUTPUT
 
-
+![alt text](13.png)
 cat < newfile 
 ```
 Hello world
@@ -161,20 +156,21 @@ Linux is world number 1
 Unix is predecessor
 Linux is best in this World
 ^d
- ```
+ ```OS-Linux-commands-Shell-script/
+ OS-Linux-commands-Shell-script/14.png
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/15.png
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/16.png
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/Screenshot at 2025-09-16 19-25-20.png
 
 
 
