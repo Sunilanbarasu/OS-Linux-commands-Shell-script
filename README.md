@@ -353,12 +353,12 @@ gunzip backup.tar.gz
 
  
 cat << stop > herecheck.txt
-```
+
 hello in this world
 i cant stop
 for this non stop movement
 stop
-```
+
 
 cat herecheck.txt
 ## OUTPUT
