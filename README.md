@@ -156,21 +156,20 @@ Linux is world number 1
 Unix is predecessor
 Linux is best in this World
 ^d
- ```OS-Linux-commands-Shell-script/
- OS-Linux-commands-Shell-script/14.png
+![alt text](14.png)
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-OS-Linux-commands-Shell-script/15.png
+![alt text](15.png)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-OS-Linux-commands-Shell-script/16.png
+![alt text](16.png)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-OS-Linux-commands-Shell-script/Screenshot at 2025-09-16 19-25-20.png
+![alt text](<Screenshot at 2025-09-16 19-25-20.png>)
 
 
 
@@ -192,81 +191,80 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-OS-Linux-commands-Shell-script/17.png
+![alt text](17.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-OS-Linux-commands-Shell-script/18.png
-
+![alt text](18.png)
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-OS-Linux-commands-Shell-script/19.png
 
+![alt text](19.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-OS-Linux-commands-Shell-script/20.png
+![alt text](20.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-OS-Linux-commands-Shell-script/21.png
 
+![alt text](21.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-OS-Linux-commands-Shell-script/22.png
 
+![alt text](22.png)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
-OS-Linux-commands-Shell-script/23.png
+![alt text](23.png)
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-OS-Linux-commands-Shell-script/24.png
+![alt text](24.png)
 
 
 seq 10 
 ## OUTPUT
 
-OS-Linux-commands-Shell-script/25.png
+![alt text](25.png)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-OS-Linux-commands-Shell-script/26.png
+![alt text](26.png)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-OS-Linux-commands-Shell-script/27.png
 
+![alt text](27.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-OS-Linux-commands-Shell-script/28.png
 
+![alt text](28.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
-OS-Linux-commands-Shell-script/29.png
+![alt text](29.png)
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-OS-Linux-commands-Shell-script/30.png
 
+![alt text](30.png)
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-OS-Linux-commands-Shell-script/31.png
+![alt text](31.png)
 
 sed -n '2,4{s/$/*/;p}' file23
 
-OS-Linux-commands-Shell-script/32.png
+![alt text](32.png)
 #Sorting File content
 cat > file21
 ```
@@ -278,7 +276,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-OS-Linux-commands-Shell-script/33.png
+![alt text](33.png)
 
 cat > file22
 ```
@@ -291,14 +289,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-OS-Linux-commands-Shell-script/34.png
 
+![alt text](34.png)
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-OS-Linux-commands-Shell-script/35.png
+![alt text](35.png)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -314,18 +312,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-OS-Linux-commands-Shell-script/37.png
+![alt text](37.png)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-OS-Linux-commands-Shell-script/36.png
+![alt text](36.png)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-OS-Linux-commands-Shell-script/38.png
+![alt text](38.png)
 
 mkdir backupdir
  
@@ -335,20 +333,19 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-OS-Linux-commands-Shell-script/39.png
-
+![alt text](39.png)
 tar -xvf backup.tar
 ## OUTPUT
-OS-Linux-commands-Shell-script/40.png
+![alt text](40.png)
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- OS-Linux-commands-Shell-script/411.png
+![alt text](411.png)
 gunzip backup.tar.gz
 ## OUTPUT
 
- OS-Linux-commands-Shell-script/42.png
+ ![alt text](42.png)
 # Shell Script
 ```
 
