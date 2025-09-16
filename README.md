@@ -572,7 +572,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-
+![alt text](53.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -621,7 +621,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-
+![alt text](54.png)
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -649,7 +649,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![alt text](57.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -665,7 +665,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![alt text](58.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -684,7 +684,7 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+ ![alt text](59.png)
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -700,7 +700,7 @@ $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
  
- 
+ ![alt text](61.png)
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -713,7 +713,7 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- 
+ ![alt text](62.png)
  
 cat forin1.sh 
 ```bash
@@ -776,6 +776,7 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+![alt text](63.png)
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -797,7 +798,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![alt text](62.png)
 
 cat forctype.sh 
 ```bash
@@ -811,7 +812,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-
+![alt text](64.png)
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -824,7 +825,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-
+![alt text](65.png)
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -842,7 +843,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![alt text](66.png)
  
 cat forbreak.sh 
 ```bash
@@ -859,7 +860,7 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
-
+![alt text](67.png)
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
@@ -884,7 +885,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![alt text](68.png)
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -898,7 +899,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![alt text](69.png)
 
  cat exread1.sh
 ```bash
@@ -910,7 +911,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-
+![alt text](70.png)
 
 
 $ ./exread1.sh 
@@ -932,7 +933,7 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
+![alt text](71.png)
  
  ./funcex.sh 1 2
 
@@ -979,64 +980,8 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
+ ![alt text](72.png)
  
- 
-cat > nc.awk
-```bash
-BEGIN{}
-{
-print len=length($0),"\t",$0 
-wordcount+=NF
-chrcnt+=len
-}
-END {
-print "total characters",chrcnt 
-print "Number of Lines are",NR
-print "No of Words count:",wordcount
-}
- ```
-cat>data.dat
-```bash
-bcdfghj
-abcdfghj
-bcdfghj
-ebcdfghj
-bcdfghj
-ibcdfghj
-bcdfghj
-obcdfghj
-bcdfghj
-ubcdfghj
-```
-awk -f nc.awk data.dat
-## OUTPUT 
- 
-cat > palindrome.sh
-```bash
-#num=545
-echo "Enter the number"
-read num
-s=0
-rev=""
-temp=$num
-while [ $num -gt 0 ]
-do
-	# Get Remainder
-	s=$(( $num % 10 ))
-	# Get next digit
-	num=$(( $num / 10 ))
-	# Store previous number and
-	# current digit in reverse
-	rev=$( echo ${rev}${s} )
-done
-if [ $temp -eq $rev ];
-then
-	echo "Number is palindrome"
-else
-	echo "Number is NOT palindrome"
-fi
-```
-## OUTPUT 
 
 
 # RESULT:
