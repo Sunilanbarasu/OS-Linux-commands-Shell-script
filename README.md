@@ -174,45 +174,6 @@ OS-Linux-commands-Shell-script/Screenshot at 2025-09-16 19-25-20.png
 
 
 
-egrep '(^hello)' newfile 
-## OUTPUT
-
-
-
-egrep '(world$)' newfile 
-## OUTPUT
-
-
-
-egrep '(World$)' newfile 
-## OUTPUT
-
-
-egrep '((W|w)orld$)' newfile 
-## OUTPUT
-
-
-
-egrep '[1-9]' newfile 
-## OUTPUT
-
-
-
-egrep 'Linux.*world' newfile 
-## OUTPUT
-
-
-egrep 'Linux.*World' newfile 
-## OUTPUT
-
-
-egrep l{2} newfile
-## OUTPUT
-
-
-
-egrep 's{1,2}' newfile
-## OUTPUT 
 
 
 cat > file23
@@ -231,81 +192,81 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/17.png
 
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-
+OS-Linux-commands-Shell-script/18.png
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/19.png
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/20.png
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/21.png
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/22.png
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
-
+OS-Linux-commands-Shell-script/23.png
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/24.png
 
 
 seq 10 
 ## OUTPUT
 
-
+OS-Linux-commands-Shell-script/25.png
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/26.png
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/27.png
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/28.png
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
-
+OS-Linux-commands-Shell-script/29.png
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/30.png
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-
+OS-Linux-commands-Shell-script/31.png
 
 sed -n '2,4{s/$/*/;p}' file23
 
-
+OS-Linux-commands-Shell-script/32.png
 #Sorting File content
 cat > file21
 ```
@@ -317,7 +278,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/33.png
 
 cat > file22
 ```
@@ -330,14 +291,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/34.png
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+OS-Linux-commands-Shell-script/35.png
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -353,18 +314,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+OS-Linux-commands-Shell-script/37.png
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/36.png
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/38.png
 
 mkdir backupdir
  
@@ -374,28 +335,23 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/39.png
 
 tar -xvf backup.tar
 ## OUTPUT
-
+OS-Linux-commands-Shell-script/40.png
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ OS-Linux-commands-Shell-script/411.png
 gunzip backup.tar.gz
 ## OUTPUT
 
- 
+ OS-Linux-commands-Shell-script/42.png
 # Shell Script
 ```
-echo '#!/bin/sh' > my-script.sh
-echo 'echo Hello World‘; exit 0 >> my-script.sh
-```
-chmod 755 my-script.sh
-./my-script.sh
-## OUTPUT
+
 
  
 cat << stop > herecheck.txt
@@ -408,7 +364,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![alt text](43.png)
 
 cat < scriptest.sh 
 ```bash
@@ -446,11 +402,11 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
+![alt text](44.png)
  
 ls file1
 ## OUTPUT
-
+![alt text](45.png)
 echo $?
 ## OUTPUT 
 ./one
@@ -458,13 +414,13 @@ bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+ ![alt text](46.png)
 abcd
  
 echo $?
  ## OUTPUT
 
-
+![alt text](47.png)
  
 # mis-using string comparisons
 
@@ -495,14 +451,14 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
+![alt text](49.png)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![alt text](51.png)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -529,7 +485,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-
+![alt text](51.png)
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -572,10 +528,7 @@ else
 echo “Sorry, the object does not exist”
 fi
 ```
-
-./ifnested.sh 
-## OUTPUT
-
+![alt text](52.png)
 
 
 # using numeric test comparisons
