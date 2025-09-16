@@ -146,10 +146,10 @@ Linux is world number 1
 Unix is predecessor
 Linux is best in this World
 ^d
-```
+
 
 cat > newfile
-```
+
 Hello world
 hello world
 Linux is world number 1
@@ -159,6 +159,7 @@ Linux is best in this World
 ![alt text](14.png)
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+
 ![alt text](15.png)
 
 
